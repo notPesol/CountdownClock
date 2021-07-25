@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.section-center{
+    display: flex;
+    margin: 0 auto;
+}
+
+.img > img{
+    max-width: 500px;
+    margin:  0 1rem 1rem 0;
+}
+
+.give-info{
+    max-width: 500px;
+}
+
+.give-info > h3{
+    text-transform: capitalize;
+    margin: 0 auto 10px auto;
+    color: rgb(49, 23, 167);
+}
+
+.giveaway{
+    text-transform: capitalize;
+    margin: 0 auto;
+    color: rgb(30, 90, 255);
+}
+
+.give-info p{
+    color: darkslategray;
+}
+
+.deadline{
+    display: flex;
+}
+
+.deadline div{
+    width: 70px;
+    background-color: rgb(68, 0, 255);
+    text-align: center;
+    margin-right: auto;
+    color: white;
+}
+
+.deadline div h4{
+    margin: 10px auto;
+}
+
+.deadline-format span{
+    text-transform: uppercase;
+}
+
+.expire{
+    color: red;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 835px) {
+    .section-center{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img > img{
+        width: 100%;
+        margin-right: 0;
+    }
+}
